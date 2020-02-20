@@ -1,0 +1,46 @@
+
+# Unison common preferences file
+
+auto = true
+
+# Paths to synchronize 
+path = .emacs
+#path = .emacs.d
+path = .screenrc
+path = .bashrc
+path = .bash_aliases
+path = notes.org
+path = .profile
+path = bin
+path = .unison/common
+path = .gitignore
+
+# Some regexps specifying names and paths to ignore
+ignore = Name temp.*
+ignore = Name *~
+ignore = Name .*~
+#ignore = Path */pilot/backup/Archive_*
+ignore = Name *.o
+ignore = Name *.tmp
+
+# Window height
+#height = 37
+
+# If any new preferences are added by Unison (e.g. 'ignore'
+# preferences added via the graphical UI), then store them in the
+# file 'common' rathen than in the top-level preference file
+addprefsto = common
+
+# Keep a backup copy of every file in a central location
+#backuplocation = central
+#backupdir = /home/bcpierce/backups
+#backup = Name *
+#backupprefix = $VERSION.
+#backupsuffix = 
+
+# Use this command for displaying diffs
+#diff = diff -y -W 79 --suppress-common-lines
+diff = diff -u
+
+# Log actions to the terminal
+log = true
